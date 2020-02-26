@@ -1,0 +1,61 @@
+<div class="main">
+        
+
+        <form action="" #userForm="ngForm" (ngSubmit)="onSave(userForm.value)">
+
+            <div class="from-1">
+                        <input name="id1" type="hidden"     [(ngModel)]="id1" />  
+                    select class: <select name="class" id="class" class="ip" [(ngModel)]="class"  >
+
+                      
+                        <option *ngFor="let kk of Repdata" value={{kk.class}} > {{kk.class}}</option>
+                    </select>
+                    Property: <select name="property" id="ip"  placeholder="Unit" class="ip" [(ngModel)]="property">
+                      <option *ngFor="let kk of Repdata" value={{kk.property}}>{{kk.property}}</option>
+                    </select>
+                    <!-- <input type="text" name="property" placeholder="Unit" class="ip" [(ngModel)]="property"> -->
+            </div>
+            <div class="form-2">
+                    Add entity:<input type="text" name="entity" placeholder="entity" class="ip" [(ngModel)]="entity">
+                    data:<input type="text" name="data" placeholder="Unit" class="ip" [(ngModel)]="data">
+            </div>
+
+            <input type="submit" class="btn" placeholder="Add" value="{{valbutton}}">
+            
+        </form>
+
+        </div>
+        
+        <hr>
+        
+        <div class="op">
+          
+                        <table style="width: 100%;" class="promo social_promo ">  
+                          <thead>  
+                          <tr style="background-color: #004a97; color: #fff; position: static top;">  
+                            <td>Id</td>  
+                            <td>Class</td>  
+                            <td>Property</td> 
+                            <td>Entity</td>
+                            <td>Data</td> 
+                            <td>Edit</td>  
+                            <td>Delete</td>  
+                          </tr>  
+                          </thead> 
+                        
+                          <tr *ngFor="let kk of Repdata;let ind = index">  
+                               
+                            <td>{{ind + 1}}</td>  
+                            <td>{{kk.class}}</td>  
+                            <td>{{kk.property}}</td> 
+                            <td>{{kk.entity}}</td>
+                            <td>{{kk.data}}</td> 
+                            <td><a (click)="edit(kk)" style="background-color:#467826;  color: #467826; border-radius: 3px; color: white; width: 70px; height: 35px;">Edit</a></td>  
+                            <td><a (click)="delete(kk._id1)" style="background-color:#467826;  color: #467826; border-radius: 3px; color: white; width: 70px; height: 35px;">Delete</a>  </td>  
+                          </tr>  
+                        </table>   
+                        
+                </div>
+
+        
+        

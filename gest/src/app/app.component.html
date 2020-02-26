@@ -1,0 +1,72 @@
+<header>
+  <div class="container">
+    <a routerLink="/" class="logo">Gestionnaire</a>
+    <nav>
+      <ul>
+        <li><a href="#" routerLink="/class">Create-Class</a></li>
+        <li><a href="#" routerLink="/fill">Fill-Entity</a></li>
+        <li><a href="#" routerLink="/edit-entity">Edit-Entities</a></li>
+        <li><a href="#" routerLink="/search">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+<router-outlet></router-outlet>
+</div>
+
+<!-- <div class="main">
+
+<form #userForm="ngForm"   (ngSubmit)="onSave(userForm.value)" novalidate>  
+  
+  <div class="from-1">
+    Add Class:  <input name="id" type="hidden"     [(ngModel)]="id" />  
+    <input name="name" type="text" class="ip" required  [(ngModel)]="name" />  
+  </div>
+  
+  <div class="prop1">
+    Add Property: <input type="text" name="address" class="ip" required [(ngModel)]="address">
+    Add Unit Range: <input type="text" name="range" class="ip" required [(ngModel)]="range">
+    Add Description: <input type="text" name="description" class="ip" required [(ngModel)]="description">
+  </div>
+  
+  <input type="submit" class="btn" value="{{valbutton}}" /> 
+</form> 
+
+</div>  
+  
+<div class="op">
+  
+<table style="width: 100%;" class="promo social_promo ">  
+  <thead>  
+  <tr style="background-color: #004a97; color: #fff;">  
+    <td>Id</td>  
+    <td>Class</td>  
+    <td>Property</td> 
+    <td>Range</td>
+    <td>Description</td> 
+    <td>Edit</td>  
+    <td>Delete</td>  
+  </tr>  
+  </thead> 
+
+  <tr *ngFor="let kk of Repdata;let ind = index">  
+       
+    <td>{{ind + 1}}</td>  
+    <td>{{kk.name}}</td>  
+    <td>{{kk.address}}</td> 
+    <td>{{kk.range}}</td>
+    <td>{{kk.description}}</td> 
+    <td><a (click)="edit(kk)" style="background-color:#467826;  color: #467826; border-radius: 3px; color: white; width: 70px; height: 35px;">Edit</a></td>  
+    <td><a (click)="delete(kk._id)" style="background-color:#467826;  color: #467826; border-radius: 3px; color: white; width: 70px; height: 35px;">Delete</a>  </td>  
+  </tr>  
+</table>   
+
+</div> -->
+
+<div class="footer">
+
+</div>
+  

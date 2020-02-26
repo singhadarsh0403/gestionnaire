@@ -1,0 +1,121 @@
+body{
+	background-color: #fff;
+	font-family: 'Noto Serif', serif;
+}
+
+.nav{
+	height: 100px;
+	background: #004a97;
+}
+
+header {
+    padding: 1em 0;
+    background-color: #004a97;
+}
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a.logo {
+        font-weight: bold;
+    }
+
+    nav {
+        float: right;
+    }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+        }
+            li a {
+                padding: 1em;
+
+                
+            }
+        
+
+h1 {
+    margin-top: 2em;
+}
+
+.form-1{
+	width: 40% inherit;
+}
+.form-2{
+	width: 40% inherit;
+}
+.btn{
+	background-color:#467826;  
+	color: #467826; 
+	border-radius: 3px; 
+	color: white; 
+	width: 70px; 
+	height: 35px;
+}
+.main{
+	text-align: center;
+}
+
+.ip{
+	width:200px;
+	height: 40px;
+	margin: 20px;
+	border-radius: 10px;
+}
+
+          /* Style the list items */
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+          
+            .promo tr{
+                border-top: solid grey;
+                border-top-width: thin;
+                padding: 14px;
+                box-shadow: 0px 0.5px 1px  #000;
+                width: 50%;
+                
+            }
+			.op{
+				height: 250px;
+				overflow: scroll;
+			}
+            .promo td, th{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align:center;
+            }
+            .promo th{
+                
+                font-weight: bold;
+            }
+            .b{
+                font-weight: bold;
+            } 
+            thead th { position: sticky; top: 0;
+            background-color: #004a97;
+            padding-bottom: 15px;}
+            .promo tr{
+                box-shadow: 2px 2px 2px grey;
+            }
+            .promo{
+                border-spacing: 50px;
+            }
+            .social_promo td{
+                padding: 12px;
+            }
+            .promo { 
+                border-collapse:separate; 
+                border-spacing: 0 10px; 
+            } 
+			
+
+.footer{
+	height: 50px;
+	width: 100%;
+	bottom: 0px;
+	position: fixed;
+	background-color: #004a97;
+}
